@@ -42,4 +42,4 @@ Feel free to explore and modify the code to understand the implementation detail
 
 ---
 
-**Netflix India Clone** | [Original Website](#) | [Contribute](#)
+**Netflix India Clone** | [Original Website](www.netflix.com) |
