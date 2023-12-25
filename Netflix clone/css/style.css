@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+    color:white;
+    font-family: "poppins", sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navigator-items{
+    position:absolute;
+    padding: 2% 4%;
+    justify-content: space-between;
+    z-index: 1;
+    width:100%;
+    display: flex;
+}
+
+.nav-logo{
+    height: 100%;
+    width: 125px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 20px;
+}
+
+.netfilx-logo{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.language{
+    background: transparent;
+    border: none;
+    color:white;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+}
+
+#selector{
+    background-color: white;
+    color: black;
+    width: 200%;
+    cursor: pointer;
+}
+
+.language option {
+    padding: 5rem; 
+    cursor: pointer;
+}
+
+.dropdown-contents{
+    background: rgba(0, 0, 0,0.4);
+    border-radius: 4px;
+    padding: 0.4rem;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-contents select option {
+    padding: 16rem;
+    cursor: pointer;
+}
+
+.sign-btn{
+    background-color: #dc030f;
+    border: #dc030f;
+    color:white;
+    padding: 0.25rem 0.4rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.hero-bg-img{
+    width: 100%;
+    height:50%;
+}
+
+.hero-img{
+    width:100%;
+    height:50%;
+    object-fit: fill;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 120%;
+    background: rgba(0,0, 0,0.6);  
+}
+
+.hero-details{
+    position: absolute;
+    top:40%;
+    left: 12%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.hero-desc , .hero-description{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.email{
+    height: 55px;
+    width: 400px;
+    border-radius: 3px;
+    background: rgba(0,0, 0,0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 0.25rem;
+    font-size: medium;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.email::placeholder {
+    text-align: start;
+}
+
+.get-started{
+    height : 55px;
+    width: 140px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #dc030f;
+    color: white;
+    border: 1px solid  #dc030f;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.hero-2{
+    border-bottom:10px solid #333;
+    border-top:10px solid #333;
+    padding: 2rem 0;
+}
+
+.hero-3{
+    border-bottom:10px solid #333;
+    padding: 2rem 0;
+}
+
+.hero-4{
+    border-bottom:10px solid #333;
+    padding: 2rem 0;
+}
+
+.card-1{
+    display: flex;
+    width: 30%;
+}
+
+.img-container{
+    position: relative;
+    z-index:1;
+    margin-left: 35%;
+}
+
+.video-container{
+    position: absolute;
+    left: 75px;
+    top: 95px;
+    z-index: -1;
+}
+
+.card-2{
+    display: flex;
+    width: 60%;
+}
+
+.card-2 > .img-container{
+    margin: 0rem;
+    left: 3px;
+    bottom: 30px;
+}
+
+.downloading{
+    background: #000;
+    width: 60%;
+    height: 125px;
+    position: absolute;
+    top: 375px;
+    left:125px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    padding: 0.7rem;
+    display: flex;
+}
+
+.downloading > img{
+    height: 100%;
+}
+
+.download-text{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.download-text > p{
+    color: #0066e3;
+}
+
+.card-3{
+    display: flex;
+    width: 80%;
+}
+
+.card-3 .video-container{
+    width: 395px;
+    height: 225px;
+    top: 50px;
+    left: 120px;
+}
+
+.card-3 .img-container{
+    margin-left: 17%;
+}
+
+.card-4{
+    display: flex;
+    width: 10%;
+    justify-content: left;
+    align-items: flex-start;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    position: relative;
+    z-index: 1;
+}
+
+.inner-title{
+    font-size: 1.8rem;
+    width: 20%;
+    margin-left: 20%;
+    margin-top: 30%;
+}
+
+.inner-title h1{
+    margin-bottom:1rem;
+    left:3px;
+} 
+
+.inner-text{
+    font-size: 1.5rem;
+    width: 20%;
+    margin-left: 20%;
+}
+
+.inner-container-2{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: right;
+    position: absolute;
+    z-index: 1;
+}
+
+.inner-title-2{
+    font-size: 1.8rem;
+    width: 40%;
+    margin-left: 120%;
+    margin-top: 20%;
+}
+
+.inner-title-2 h1{
+    margin-bottom:1rem;
+    left:3px;
+    margin-left: 120%;
+    margin-top: 20%;
+} 
+
+.inner-text-2{
+    font-size: 1.5rem;
+    width: 20%;
+    margin-left: 200%;
+}
+
+.inner-container-3{
+    margin-top: 180%;
+}
+
+.inner-title-3{
+    margin-bottom:1rem;
+    font-size: 1.8rem;
+    width: 40%;
+    margin-left: 20%;
+}
+
+.inner-text-3{
+    font-size: 1.5rem;
+    width: 20%;
+    margin-left: 20%;
+}
+
+.faq{
+    border-bottom: 10px solid #333;
+    margin-top: 5px;
+}
+
+.faq .inner-container{
+    margin: 2rem 0;
+}
+
+.inner-title-4{
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 160%;
+    font-weight: bolder;
+}
+
+.faq h2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.faq ul{
+    width: 60%;
+    margin: auto;
+}
+
+.faq li {
+    overflow: hidden;
+    background-color: #333; /* Set initial background color */
+    transition: height 0.3s ease-in, background-color 0.3s ease; /* Add transitions */
+    cursor: pointer;
+}
+
+.faq li > p {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    height: 0;
+    visibility: hidden;
+    transition: height 0.3s ease-in, visibility 0.3s ease-in; /* Add transitions */
+}
+
+.faq li.show {
+    background-color: #444; /* Change background color when expanded */
+}
+
+.faq li.show i {
+    transform: rotate(45deg);
+}
+
+.faq li.show > p {
+    height: auto;
+    visibility: visible;
+}
+
+.email-info p{
+    margin-left: 340px;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.e-mail{
+    margin-left: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mail{
+    height: 55px;
+    width: 400px; 
+    background: rgba(0, 0, 0,0.4);
+    border: 1px solid grey;
+    text-align: start;
+    padding-left: 20px;
+}
+
+#mail::placeholder {
+    text-align: start;
+}
+
+footer .links ul{
+    columns: 4;
+    margin-left: 10%;
+    margin-top: 30px; 
+}
+
+footer p{
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+    margin-left: 10%; 
+    color: gray;
+}
+
+footer .dropdown-contents{
+    width:10%;
+    margin-top: 1rem;
+    margin-left: 10%;
+}
+
+li a{
+    color:gray;
+}
+
+footer a{
+    color: gray;
+}
+
+#head{
+    margin-top: 5%;
+}
+
+#tail{
+    margin-bottom: 5rem;
+}
